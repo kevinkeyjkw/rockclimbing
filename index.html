@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin - Bootstrap Admin Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3"></script>
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div>
+
+        <div id="nav-placeholder">
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header yourEventsHome">
+                        Events you're attending
+                    </h1>
+                    <h1 class="page-header upcomingHome">
+                        Upcoming events
+                    </h1>
+                    <h1 class="page-header historyHome">
+                        History
+                    </h1>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div id="events_table_pane"></div>
+                        </div>
+
+                        <div class="col-lg-6 nonhistory-rightpanel">
+                            <div class="row">
+                                <h3>Event details</h3>
+                                <button class="btn btn-default yourEventsHome" id="cancel">Cancel</button>
+                                <button class="btn btn-default upcomingHome" id="join">Join</button>
+                                <div class="table-responsive">
+                                    <table class="table table-hover"  style="width: 80%;">
+                                        <thead>
+                                        <tr>
+                                            <th>Event host</th>
+                                            <th>Difficulty level</th>
+                                            <th>Time</th>
+                                        </tr>
+                                        </thead>
+
+                                        <tbody>
+                                        <tr>
+                                            <td id="host"></td>
+                                            <td id="diff"></td>
+                                            <td id="time"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <h3> Location</h3>
+                                    <div id="map" style="width: 500px; height: 400px;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 history-rightpanel" id="item-desc">
+
+                                <div id="item-desc-content" class="row">
+                                    <h3 >Comments</h3><a href="#" id="edit-comment">edit</a>
+                                    <label type="text" id="comment-area" class="table-responsive" style="resize:none"></label>
+                                </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css">
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
+    <link rel="stylesheet" href="bower_components/jt.timepicker/jquery.timepicker.css"/>
+    <script src="bower_components/jt.timepicker/jquery.timepicker.js"></script>
+
+    <div id="modal-placeholder">
+    </div>
+
+
+</body>
+<script src="js/events_table.js"></script>
+<script src="js/main.js"></script>
+</html>

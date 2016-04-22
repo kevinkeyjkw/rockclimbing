@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .list-group {
+            width: 600px
+        }
+        .classWithPad { margin:10px; padding:10px; }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.3.js"   integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc="   crossorigin="anonymous"></script>
+    <script src="js/events_table.js"></script>
+    <script>
+
+
+$(document).ready(function () {
+
+console.log("ready!");
+event1 = {  
+            date: "Saturday 5pm<br>October 12",
+            location: "New York, NY",
+            difficulty: 4,
+            num: 100
+        };
+event2 = {  
+            date: "Saturday 5pm<br>October 12",
+            location: "New York, NY",
+            difficulty: 10,
+            num: 2
+        };
+events = [event1, event2];
+append_event_table(events, "body");
+});
+
+</script>
+</head>
+
+<body>
+</body>
+
+</html>

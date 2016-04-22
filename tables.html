@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin - Bootstrap Admin Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3"></script>
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span class="navbar">Climb!</span></a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="navbar">Upcoming</span>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="navbar">History</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="tables.html"><span class="navbar">Find</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="navbar">Post</span></a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class = "breadcrumb"> 
+                        <h1 class="page-header">
+                            Find an event! 
+                         </h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>Upcoming events</h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Page</th>
+                                        <th>Visits</th>
+                                        <th>% New Visits</th>
+                                        <th>Revenue</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>/index.html</td>
+                                        <td>1265</td>
+                                        <td>32.3%</td>
+                                        <td>$321.33</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/about.html</td>
+                                        <td>261</td>
+                                        <td>33.3%</td>
+                                        <td>$234.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/sales.html</td>
+                                        <td>665</td>
+                                        <td>21.3%</td>
+                                        <td>$16.34</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/blog.html</td>
+                                        <td>9516</td>
+                                        <td>89.3%</td>
+                                        <td>$1644.43</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/404.html</td>
+                                        <td>23</td>
+                                        <td>34.3%</td>
+                                        <td>$23.52</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/services.html</td>
+                                        <td>421</td>
+                                        <td>60.3%</td>
+                                        <td>$724.32</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/blog/post.html</td>
+                                        <td>1233</td>
+                                        <td>93.2%</td>
+                                        <td>$126.34</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                        <h3>Event details</h3>
+                        <div class="table-responsive">
+                            <table class="table table-hover"  style="width: 80%;">
+                                <thead>
+                                    <tr>
+                                        <th>Event host</th>
+                                        <th>Difficulty level</th>
+                                        <th>Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id = "host">Bob Smith</td>
+                                        <td id = "diff">v5</td>
+                                        <td id = "time">2016/03/24 15:00 - 17:00 </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3> See who is going</h3>
+                        <!--<img src="../Slide2.jpg" alt="participants" style="width:304px">-->
+<!--                        <div>
+                            <i class="fa fa-fw fa-user"> </i> <span id = 'user1'> </span><span> Exprienced climber with 3 year training.  </span>
+                        </div>
+                        
+                        <div>
+                            <i class="fa fa-fw fa-user"> </i> <span id = 'user2'> </span><span> Exprienced climber with 3 year training.  </span>
+                        </div> -->
+
+                        <div class="table-responsive">
+                            <table class="table table-hover" style="width: 80%;">
+                                <thead>
+                                    <tr>
+                                        <th>Participants</th>
+                                        <th>Who they are</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td > <i class="fa fa-fw fa-user"> </i>  <span id = 'user1'>Bob Smith </span></td>
+                                        <td id = "exp_1">v5</td>
+                                    </tr>
+                                    <tr>
+                                        <td > <i class="fa fa-fw fa-user"> </i>  <span id = 'user2'>Bob Smith </span></td>
+                                        <td id = "exp_2">v5</td>
+                                    </tr>                                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+
+
+                    <div class="col-lg-6">
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <h3> Location</h3>
+
+                        <div id="map" style="width: 500px; height: 400px;"></div>
+
+
+ <!--                       <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?client=safari&q=boston+ma&oe=UTF-8&ie=UTF8&hq=&hnear=Boston&gl=us&ll=32.448377,-112.074037&spn=0.040679,0.07699&z=14&output=embed"></iframe><br /><small> -->
+
+                   </div>
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script>
+
+
+
+    function shuffle(array) {
+            var counter = array.length;
+            // While there are elements in the array
+            while (counter > 0) {
+                // Pick a random index
+                var index = Math.floor(Math.random() * counter);
+                // Decrease counter by 1
+                counter--;
+                // And swap the last element with it
+                var temp = array[counter];
+                array[counter] = array[index];
+                array[index] = temp;
+            }
+            return array;
+        }
+
+    function initialize() {
+         var myLatlng1 = new google.maps.LatLng(Math.random()  * 50, Math.random() /10);
+         var mapOptions = {
+             zoom: 10,
+             center: myLatlng1,
+             mapTypeId: google.maps.MapTypeId.ROADMAP
+         };
+         var map = new google.maps.Map(document.getElementById('map'),
+         mapOptions);
+         if (navigator.geolocation) {
+             navigator.geolocation.getCurrentPosition(function (position) {
+                 initialLocation = new google.maps.LatLng(Math.random()  * 50, Math.random() /10);
+                 map.setCenter(initialLocation);
+             });
+         }
+     }
+
+     function change() {
+        var map;
+        var hosts = ['Bob Smith', 'Dan Hoversan', 'Johnson Cliff']; 
+        var dif = ['v1', 'v3', 'v5', 'v7']; 
+        var time = ['2016/04/28 11:00 - 13:00', '2016/05/24 15:00 - 17:00', '2016/05/14 10:00 - 12:00']; 
+        var intro = ['Newbee in climing', 'Experienced climber with 3-year experience', 'Passinate about climbing', 'climbing lover']; 
+        var host_chosen = shuffle(hosts).slice(0, 2);
+        var intro_chosen = shuffle(intro).slice(0,2);  
+        var host= document.getElementById("host"); 
+        host.innerHTML = host_chosen[0];   
+        var u1 = document.getElementById("user1");
+        u1.innerHTML =  host_chosen[0];  
+        var diff = document.getElementById("diff"); 
+        diff.innerHTML = shuffle(dif).slice(0, 1); 
+        var tim = document.getElementById("time"); 
+        tim.innerHTML = shuffle(time).slice(0, 1);        
+        var u2 = document.getElementById("user2"); 
+        u2.innerHTML = host_chosen[1];  
+        var exp1 = document.getElementById("exp_1"); 
+        exp1.innerHTML = intro_chosen[0]; 
+        var exp2 = document.getElementById("exp_2"); 
+        exp2.innerHTML = intro_chosen[1];        
+        initialize();
+     }
+
+
+     change(); 
+     alert('change'); 
+     change(); 
+
+
+    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
